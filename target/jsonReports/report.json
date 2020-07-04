@@ -1,0 +1,409 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-20T12:27:38.839Z",
+        "line": 3,
+        "name": "Validate google search is working",
+        "description": "",
+        "id": "feature-to-test-google-search-functionality;validate-google-search-is-working",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6444000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "browser is open",
+            "match": {
+              "location": "stepdefinition.LoginDemoStep_PF.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "undefined"
+            },
+            "line": 6,
+            "name": "user is on google search page",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 7,
+            "name": "user enters a text in search box",
+            "match": {},
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 8,
+            "name": "hits enter",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user is navigated to search result",
+            "match": {},
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "feature to test google search functionality",
+    "description": "",
+    "id": "feature-to-test-google-search-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/googleSearch.feature",
+    "tags": []
+  },
+  {
+    "line": 4,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-20T12:27:45.536Z",
+        "line": 6,
+        "name": "Check login is successful with valid credentials",
+        "description": "",
+        "id": "feature-to-test-login-functionality;check-login-is-successful-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdefinition.LoginDemoStep_PF.user_is_on_login_page(LoginDemoStep_PF.java:38)\r\n\tat ✽.user is on login page(file:///C:/LEO/Automation/Workspace/SeleniumCucumberJavaBDD/src/test/resources/Features/login.feature:8)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user is on login page",
+            "match": {
+              "location": "stepdefinition.LoginDemoStep_PF.user_is_on_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 9,
+            "name": "user enters username and password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "username",
+                  "offset": 12
+                },
+                {
+                  "val": "password",
+                  "offset": 25
+                }
+              ],
+              "location": "stepdefinition.LoginDemoStep_PF.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 10,
+            "name": "clicks on login button",
+            "match": {},
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "skipped"
+            },
+            "line": 11,
+            "name": "user is navigated to home page",
+            "match": {
+              "location": "stepdefinition.LoginDemoStep_PF.user_is_navigated_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "feature to test login functionality",
+    "description": "",
+    "id": "feature-to-test-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/login.feature",
+    "tags": []
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-06-20T12:27:45.581Z",
+        "line": 12,
+        "name": "Check login is successful with valid credentials",
+        "description": "",
+        "id": "test-login-functionality;check-login-is-successful-with-valid-credentials;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3536000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "browser is open",
+            "match": {
+              "location": "stepdefinition.LoginDemoStep_PF.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1352000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on login page",
+            "match": {
+              "location": "stepdefinition.LoginDemoStep_PF.user_is_on_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3282000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters Raghav and 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Raghav",
+                  "offset": 12
+                },
+                {
+                  "val": "12345",
+                  "offset": 23
+                }
+              ],
+              "location": "stepdefinition.LoginDemoStep_PF.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 88000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on login",
+            "match": {
+              "location": "stepdefinition.LoginDemoStep_PF.user_clicks_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdefinition.LoginDemoStep_PF.user_is_navigated_to_home_page(LoginDemoStep_PF.java:64)\r\n\tat ✽.user is navigated to home page(file:///C:/LEO/Automation/Workspace/SeleniumCucumberJavaBDD/src/test/resources/Features/loginDemo.feature:8)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user is navigated to home page",
+            "match": {
+              "location": "stepdefinition.LoginDemoStep_PF.user_is_navigated_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-20T12:27:53.884Z",
+        "line": 13,
+        "name": "Check login is successful with valid credentials",
+        "description": "",
+        "id": "test-login-functionality;check-login-is-successful-with-valid-credentials;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3670000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "browser is open",
+            "match": {
+              "location": "stepdefinition.LoginDemoStep_PF.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1616000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on login page",
+            "match": {
+              "location": "stepdefinition.LoginDemoStep_PF.user_is_on_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3213000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters Ele and 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Ele",
+                  "offset": 12
+                },
+                {
+                  "val": "12345",
+                  "offset": 20
+                }
+              ],
+              "location": "stepdefinition.LoginDemoStep_PF.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 90000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on login",
+            "match": {
+              "location": "stepdefinition.LoginDemoStep_PF.user_clicks_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdefinition.LoginDemoStep_PF.user_is_navigated_to_home_page(LoginDemoStep_PF.java:64)\r\n\tat ✽.user is navigated to home page(file:///C:/LEO/Automation/Workspace/SeleniumCucumberJavaBDD/src/test/resources/Features/loginDemo.feature:8)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user is navigated to home page",
+            "match": {
+              "location": "stepdefinition.LoginDemoStep_PF.user_is_navigated_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-06-20T12:28:02.504Z",
+        "line": 14,
+        "name": "Check login is successful with valid credentials",
+        "description": "",
+        "id": "test-login-functionality;check-login-is-successful-with-valid-credentials;;4",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3426000000,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "browser is open",
+            "match": {
+              "location": "stepdefinition.LoginDemoStep_PF.browser_is_open()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1090000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on login page",
+            "match": {
+              "location": "stepdefinition.LoginDemoStep_PF.user_is_on_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3304000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user enters Jamaiyeski and 12345",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Jamaiyeski",
+                  "offset": 12
+                },
+                {
+                  "val": "12345",
+                  "offset": 27
+                }
+              ],
+              "location": "stepdefinition.LoginDemoStep_PF.user_enters_username_and_password(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 83000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user clicks on login",
+            "match": {
+              "location": "stepdefinition.LoginDemoStep_PF.user_clicks_on_login()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "error_message": "java.lang.NullPointerException\r\n\tat stepdefinition.LoginDemoStep_PF.user_is_navigated_to_home_page(LoginDemoStep_PF.java:64)\r\n\tat ✽.user is navigated to home page(file:///C:/LEO/Automation/Workspace/SeleniumCucumberJavaBDD/src/test/resources/Features/loginDemo.feature:8)\r\n",
+              "duration": 1000000,
+              "status": "failed"
+            },
+            "line": 8,
+            "name": "user is navigated to home page",
+            "match": {
+              "location": "stepdefinition.LoginDemoStep_PF.user_is_navigated_to_home_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test login functionality",
+    "description": "",
+    "id": "test-login-functionality",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/Features/loginDemo.feature",
+    "tags": []
+  }
+]
